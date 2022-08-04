@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,10 @@
 
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <title>Alvaro JS Portfolio</title>
 </head>
+
 <body>
     <header class="header" id="header">
         <nav class="nav container">
@@ -28,17 +30,13 @@
                     </li>
                     <li class="nav__item">
                         <a href="#skills" class="nav__link">
-                            <i class='bx bx-file nav__icon' ></i> Skills
+                            <i class='bx bx-file nav__icon'></i> Skills
                         </a>
                     </li>
+                   
                     <li class="nav__item">
                         <a href="" class="nav__link">
-                            <i class='bx bx-briefcase nav__icon' ></i> Services
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">
-                            <i class='bx bx-photo-album nav__icon' ></i> Portfolio
+                            <i class='bx bx-photo-album nav__icon'></i> Portfolio
                         </a>
                     </li>
                     <li class="nav__item">
@@ -47,16 +45,451 @@
                         </a>
                     </li>
                 </ul>
-                <i class='bx bx-x' id="nav-close"></i>
+                <i class='bx bx-x nav__close' id="nav-close"></i>
             </div>
 
             <div class="nav__btns">
                 <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu' ></i>
+                    <i class='bx bx-menu'></i>
                 </div>
             </div>
         </nav>
     </header>
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/%C3%A1lvaro-japa-salazar-27311b216/" target="_blank"
+                            class="home__social-icon">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="https://twitter.com/JAlvaroJS" target="_blank" class="home__social-icon">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+                        <a href="https://github.com/AlvarowJS" target="_blank" class="home__social-icon">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                    </div>
+
+                    <div class="home__img">
+
+                        <svg class="home__blob" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <clipPath id="shape">
+                                    <path fill="currentColor"
+                                        d="M842.5,689.5Q802,879,614.5,848.5Q427,818,281.5,746.5Q136,675,129,496.5Q122,318,277,261Q432,204,611,170Q790,136,836.5,318Q883,500,842.5,689.5Z">
+                                    </path>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#shape)">
+                                <path
+                                    d="M842.5,689.5Q802,879,614.5,848.5Q427,818,281.5,746.5Q136,675,129,496.5Q122,318,277,261Q432,204,611,170Q790,136,836.5,318Q883,500,842.5,689.5Z" />
+                                <image class="home__blob-img" x='12' y='18' xlink:href="assets/img/perfil2.png" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'am AlvaroJSalazar</h1>
+                        <h3 class="home__subtitle">FullStack Developer</h3>
+                        <p class="home__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+                            veritatis quo perferendis deleniti enim voluptas at animi rem facere esse mollitia, beatae
+                            voluptates voluptatem, id incidunt, excepturi reiciendis? Porro, ab.</p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me <i class='bx bx-message-square-dots button__icon'></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class='bx bx-mouse home__scroll-mouse'></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class='bx bx-down-arrow-alt home__scroll-arrow'></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- about me -->
+        <section class="about section" id="about">
+            <h2 class="section__title">About me</h2>
+            <span class="section__subtitle">My introducction</span>
+
+            <div class="about__container container grid">
+                <img src="assets/img/about.png" alt="" class="about__img">
+
+                <div class="about__data">
+                    <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nisi
+                        facere dolorum hic voluptatibus distinctio consequuntur accusamus cumque itaque repudiandae?
+                        Adipisci consequuntur facilis natus commodi ad deserunt earum quam eligendi!</p>
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">08+</span>
+                            <span class="about__info-name">Years <br> experience</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">03+</span>
+                            <span class="about__info-name">Projects <br> completed</span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">02</span>
+                            <span class="about__info-name">Companies <br> worked</span>
+                        </div>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a download="" href="assets/pdf/cv.pdf" class="button button--flex">
+                            Download CV<i class='bx bx-download button__icon'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My technical level</span>
+
+            <div class="skills__container container grid">
+                <div>
+                    <!-- Skill 1 -->
+                    <div class="skills__content skills__open">
+                        <div class="skills__header">
+                            <i class='bx bx-bracket skills__icon'></i>
+
+                            <div>
+                                <h1 class="skills__titles">Frontend developer</h1>
+                                <span class="skills__subtitle">More than 4 years</span>
+                            </div>
+                            <i class='bx bx-chevron-down skills__arrow'></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">100%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__html"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__css"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__react"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skill 2 -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class='bx bx-server skills__icon'></i>
+
+                            <div>
+                                <h1 class="skills__title">Backend developer</h1>
+                                <span class="skills__subtitle">More than 1 years</span>
+                            </div>
+                            <i class='bx bx-chevron-down skills__arrow'></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">NodeJS/Express</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__nodejs"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">PostgreSQL/MongoDB</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__postgressql"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__python"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Spring</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__spring"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skill 3 -->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class='bx bx-network-chart skills__icon'></i>
+
+                            <div>
+                                <h1 class="skills__title">Software Architecture and Project Managment</h1>
+                                <span class="skills__subtitle">More than 1 years</span>
+                            </div>
+                            <i class='bx bx-chevron-down skills__arrow'></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Jira Sotware</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__jira"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">UML</h3>
+                                    <span class="skills__number">100%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__uml"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">SCRUM</h3>
+                                    <span class="skills__number">100%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__scrum"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Soft Habilities</h3>
+                                    <span class="skills__number">100%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__soft"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Qualification -->
+        <section class="qualification section">
+            <h2 class="section__title">Qualitifation</h2>
+            <span class="section__subtitle">My personal Journey</span>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                        <i class='bx bxs-graduation qualification__icon'></i>
+                        Education
+                    </div>
+
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <i class='bx bx-briefcase-alt-2 qualification__icon'></i>
+                        Work
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <!-- qualification conetn 1 -->
+                    <div class="qualification__content qualification__active" data-content id="education" >
+                        <!-- qualification 1 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title"> Computer and systems engineering</h3>
+                                <span class="qualification__subtitle">Universidad de Huánuco</span>
+                                <div class="qualification__calendar">
+                                    <i class='bx bx-calendar'></i>
+                                    2015 - 2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- qualificaion 2 -->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title"> Master's degree in software engineering and computer
+                                    systems</h3>
+                                <span class="qualification__subtitle">Universidad Internacional de la Rioja</span>
+                                <div class="qualification__calendar">
+                                    <i class='bx bx-calendar'></i>
+                                    2021 - 2023
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- qualificaion 3 -->
+
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Full-Stack Web Programming and Computer Science</h3>
+                                <span class="qualification__subtitle">Academlo</span>
+                                <div class="qualification__calendar">
+                                    <i class='bx bx-calendar'></i>
+                                    2022
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- qualification content 2 -->
+                    <div class="qualification__content" data-content id="work">
+                        <!-- qualification 1 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title"> Systems Analyst and Developer</h3>
+                                <span class="qualification__subtitle">Partner Tech</span>
+                                <div class="qualification__calendar">
+                                    <i class='bx bx-calendar'></i>
+                                   Abr. 2021 - Mar. 2022
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- qualificaion 2 -->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title"> Luteacher</h3>
+                                <span class="qualification__subtitle">Luteach</span>
+                                <div class="qualification__calendar">
+                                    <i class='bx bx-calendar'></i>
+                                    Jun. 2022 - Actualidad
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Porfolio</h2>
+            <span class="section__subtitle">Most Recent Work</span>
+
+            <div class="porfolio__container container">
+                <div>
+                    <!-- portfolio 1 -->
+                    <div class="portfolio__content grid">
+                        <img src="assets/img/porfolio1.png" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Modern Website</h3>
+                            <p class="portfolio__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, amet tenetur ipsum itaque, cumque unde a nulla obcaecati expedita accusantium inventore laborum qui similique fuga, odit enim dolor. Corrupti, enim.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- portfolio 2 -->
+                    <div class="portfolio__content grid">
+                        <img src="assets/img/porfolio1.png" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Modern Website</h3>
+                            <p class="portfolio__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, amet tenetur ipsum itaque, cumque unde a nulla obcaecati expedita accusantium inventore laborum qui similique fuga, odit enim dolor. Corrupti, enim.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- portfolio 3 -->
+                    <div class="portfolio__content grid">
+                        <img src="assets/img/porfolio1.png" alt="" class="portfolio__img">
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Modern Website</h3>
+                            <p class="portfolio__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, amet tenetur ipsum itaque, cumque unde a nulla obcaecati expedita accusantium inventore laborum qui similique fuga, odit enim dolor. Corrupti, enim.</p>
+                            <a href="#" class="button button--flex button--small portfolio__button">
+                                Demo
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="./js/main.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
 </body>
+
 </html>
