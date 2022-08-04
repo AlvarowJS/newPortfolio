@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <title>Alvaro JS Portfolio</title>
 </head>
 
@@ -443,10 +443,10 @@
             <h2 class="section__title">Porfolio</h2>
             <span class="section__subtitle">Most Recent Work</span>
 
-            <div class="porfolio__container container">
-                <div>
+            <div class="porfolio__container container swiper-container">
+                <div class="swiper-wrapper">
                     <!-- portfolio 1 -->
-                    <div class="portfolio__content grid">
+                    <div class="portfolio__content grid swiper-slide">
                         <img src="assets/img/porfolio1.png" alt="" class="portfolio__img">
 
                         <div class="portfolio__data">
@@ -454,12 +454,12 @@
                             <p class="portfolio__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, amet tenetur ipsum itaque, cumque unde a nulla obcaecati expedita accusantium inventore laborum qui similique fuga, odit enim dolor. Corrupti, enim.</p>
                             <a href="#" class="button button--flex button--small portfolio__button">
                                 Demo
-                                <i class='bx bx-right-arrow-alt'></i>
+                                <i class='bx bx-right-arrow-alt button__icon'></i>
                             </a>
                         </div>
                     </div>
                     <!-- portfolio 2 -->
-                    <div class="portfolio__content grid">
+                    <div class="portfolio__content grid swiper-slide">
                         <img src="assets/img/porfolio1.png" alt="" class="portfolio__img">
 
                         <div class="portfolio__data">
@@ -467,12 +467,12 @@
                             <p class="portfolio__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, amet tenetur ipsum itaque, cumque unde a nulla obcaecati expedita accusantium inventore laborum qui similique fuga, odit enim dolor. Corrupti, enim.</p>
                             <a href="#" class="button button--flex button--small portfolio__button">
                                 Demo
-                                <i class='bx bx-right-arrow-alt'></i>
+                                <i class='bx bx-right-arrow-alt button__icon'></i>
                             </a>
                         </div>
                     </div>
                     <!-- portfolio 3 -->
-                    <div class="portfolio__content grid">
+                    <div class="portfolio__content grid swiper-slide">
                         <img src="assets/img/porfolio1.png" alt="" class="portfolio__img">
 
                         <div class="portfolio__data">
@@ -480,16 +480,25 @@
                             <p class="portfolio__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, amet tenetur ipsum itaque, cumque unde a nulla obcaecati expedita accusantium inventore laborum qui similique fuga, odit enim dolor. Corrupti, enim.</p>
                             <a href="#" class="button button--flex button--small portfolio__button">
                                 Demo
-                                <i class='bx bx-right-arrow-alt'></i>
+                                <i class='bx bx-right-arrow-alt button__icon'></i>
                             </a>
                         </div>
                     </div>
                 </div>
+                <!-- arrows swiper -->
+                <div class="swiper-button-next">
+                    <i class='bx bxs-chevron-right swiper-portfolio-icon' ></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class='bx bx-chevron-left swiper-portfolio-icon'></i>
+                </div>
+
+                <div class="swiper-pagination"></div>
             </div>
         </section>
     </main>
-    <script src="./js/main.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
