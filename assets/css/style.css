@@ -4,7 +4,7 @@
 /* variables */
 :root {
     --header-height: 3rem;
-    --principal-color: 250; /*Atriburo que cambiara el color de toda la app si se cambia este numero
+    --principal-color: 100; /*Atriburo que cambiara el color de toda la app si se cambia este numero
 
     /* colores por hsl una forma de crear colores diferente al rgb*/
     --first-color: hsl(var(--principal-color),69%, 61%);
@@ -171,9 +171,10 @@ img{
 
 .nav__logo,
 .nav__toggle{
-    color: --title-color;
+    color: var(--title-color);
     font-weight: var(--font-medium);
 }
+
 
 .nav__logo:hover {
     color: var(--first-color);
@@ -282,6 +283,11 @@ img{
 
 .home__title {
     font-size: var(--big-font-size);
+}
+.home__title span{
+    background-color: var(--first-color);
+    color: black;
+    border-radius: 2px;
 }
 
 .home__subtitle {
@@ -694,7 +700,7 @@ img{
 .footer__copy{
     font-size: var(--smaller-font-size);
     text-align: center;
-    color: var(--text-color-ligth);
+    color: var(--first-color-alt);
     margin-top: var(--mb-3);
 }
 
@@ -749,7 +755,7 @@ img{
     .about__container,
     .portfolio__content,
     .contact__container,
-    .skills__container,
+    /* .skills__container, */
     .footer__container
     {
         grid-template-columns: repeat(2, 1fr);
